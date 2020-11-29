@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="40dp"
+    android:paddingHorizontal="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Todo"
+        android:textSize="28dp"
+        android:textColor="@color/colorPrimaryText"
+        android:gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUpdateTodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:hint="Updated Todo"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/btnUpdate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Update Todo"
+            android:textColor="@color/colorPrimaryText"
+            android:gravity="center"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/add_button_background"/>
+
+        <TextView
+            android:id="@+id/btnUpdateCancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/colorPrimaryText"
+            android:gravity="center"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/cancel_button_background"/>
+    </LinearLayout>
+
+</LinearLayout>
